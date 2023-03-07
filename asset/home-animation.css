@@ -32,6 +32,29 @@
     background: red;
 }
 
+
+.box-area li::before, .box-area li::after{
+    background: inherit;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+}
+
+.box-area li::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.box-area li::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
 .box-area li:nth-child(1) {
     left: 86%;
     width: 0;
