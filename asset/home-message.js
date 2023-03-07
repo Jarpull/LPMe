@@ -27,10 +27,10 @@ function typeWriter() {
 
 	var message = 'Good ';
 
-	var morningMessage = 'Morning, ';
-	var afternoonMessage = 'Afternoon, ';
-	var eveningMessage = 'Evening, ';
-	var nightMessage = 'Night, ';
+	var morningMessage = 'Morning';
+	var afternoonMessage = 'Afternoon';
+	var eveningMessage = 'Evening';
+	var nightMessage = 'Night';
 
 	var hour = today.getHours();
 
@@ -39,7 +39,6 @@ function typeWriter() {
 	else if (hour > 10) message += afternoonMessage;
 	else message += morningMessage;
 
-	message += 'Vinny';
 	currentDate = new Date()
 	date = currentDate.getDate()
 	month = currentDate.getMonth()
